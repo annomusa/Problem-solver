@@ -13,5 +13,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: cd Leetcode 
-    - run: xcodebuild test -project LeetCode.xcodeproj -scheme LeetCodeTests
+    - run: cd Leetcode && xcodebuild test -project LeetCode.xcodeproj -scheme LeetCodeTests
