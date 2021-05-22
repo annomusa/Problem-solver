@@ -27,4 +27,32 @@ class FirstLastPosition {
         
         return [startIndex, endIndex]
     }
+    
+    private func searchRange(nums: [Int], target: Int, direction: Direction) -> Int {
+        var start = 0
+        var end = nums.count - 1
+        var result = -1
+        
+        while start <= end {
+            let mid = (start + end) / 2
+            if nums[mid] == target {
+                result = mid
+                if direction == .lo {
+                    end = mid - 1
+                } else {
+                    start = mid + 1
+                }
+            } else if nums[mid] < target {
+                start = mid + 1
+            } else if nums[mid] > target {
+                end = mid - 1
+            }
+        }
+        
+        return result
+    }
+    
+    private enum Direction {
+        case lo, hi
+    }
 }
