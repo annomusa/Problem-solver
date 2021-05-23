@@ -14,13 +14,25 @@
   "testTargets" : [
     {
       "skippedTests" : [
+        "AddStringsTests",
+        "CountingValleysTests",
         "CropTheMessageTests",
         "DistinctArrayGeneratorTests",
         "EvenWordTests",
         "FirstLastPositionTests",
+        "JumpingCloudsTests",
+        "LeftRotationTests",
+        "MergeSortedListsTests",
+        "NewYearChaosTests",
+        "PalindromeListsTests",
         "PlusOneTest",
+        "RepeatedStringTests",
+        "ReverseListsTests",
         "ReverseStringTests",
-        "TwoSumTests"
+        "SalesByMatchTests",
+        "TwoDArrayTests",
+        "TwoSumTests",
+        "WholeWeeksTests"
       ],
       "target" : {
         "containerPath" : "container:LeetCode.xcodeproj",
