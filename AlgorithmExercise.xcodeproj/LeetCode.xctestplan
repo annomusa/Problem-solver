@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "25457942-4F35-4836-8302-E2589026C40D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:LeetCode.xcodeproj",
+        "identifier" : "B1F72481263EAC5200A50B69",
+        "name" : "LeetCodeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

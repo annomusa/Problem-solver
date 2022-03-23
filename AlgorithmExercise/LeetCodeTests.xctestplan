@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "128FE281-4025-4386-8EC3-E036D25D83F0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AlgorithmExercise.xcodeproj",
+        "identifier" : "B1F72481263EAC5200A50B69",
+        "name" : "AlgorithmExerciseTests"
+      }
+    }
+  ],
+  "version" : 1
+}
