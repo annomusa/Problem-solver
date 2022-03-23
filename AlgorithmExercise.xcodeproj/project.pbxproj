@@ -45,7 +45,7 @@
 		B1FB169E265E6B4300824A22 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB169D265E6B4200824A22 /* CarList.swift */; };
 		FE19AF2D27EB631100978A0D /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19AF2C27EB631100978A0D /* TreeNode.swift */; };
 		FE30F98227B566E80090A2B5 /* 235-first-bad-version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30F98127B566E80090A2B5 /* 235-first-bad-version.swift */; };
-		FE4C1E732799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift */; };
+		FE4C1E732799ABB7002CFAC6 /* 235-lowest-common-ancestor-bst.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor-bst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +101,7 @@
 		FE19AF2B27EB5FB900978A0D /* AlgorithmExerciseTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlgorithmExerciseTests.xctestplan; path = AlgorithmExercise/AlgorithmExerciseTests.xctestplan; sourceTree = "<group>"; };
 		FE19AF2C27EB631100978A0D /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		FE30F98127B566E80090A2B5 /* 235-first-bad-version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-first-bad-version.swift"; sourceTree = "<group>"; };
-		FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-lowest-common-ancestor.swift"; sourceTree = "<group>"; };
+		FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor-bst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-lowest-common-ancestor-bst.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 				B15E239426595E890094BC0E /* 206-ReverseLists.swift */,
 				B15E2398265965B60094BC0E /* 234-PalindromeLists.swift */,
 				FE30F98127B566E80090A2B5 /* 235-first-bad-version.swift */,
-				FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift */,
+				FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor-bst.swift */,
 				B1F72497263EAD0D00A50B69 /* 344-ReverseString.swift */,
 				B15E239C265969780094BC0E /* 415-AddStrings.swift */,
 				B1EE9F212663DA8D008DFDCD /* 1031-MaxSumNonOverlapping.swift */,
@@ -337,7 +337,7 @@
 				B1E97397265BEE6D00F5F172 /* AlternatingCharacters.swift in Sources */,
 				B15E23A5265A0F250094BC0E /* CountingValleys.swift in Sources */,
 				B1FB1694265E59C200824A22 /* PlusOperator.swift in Sources */,
-				FE4C1E732799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift in Sources */,
+				FE4C1E732799ABB7002CFAC6 /* 235-lowest-common-ancestor-bst.swift in Sources */,
 				B15E239526595E890094BC0E /* 206-ReverseLists.swift in Sources */,
 				B1FB1687265E2C1D00824A22 /* SessionWatcher.swift in Sources */,
 				B113FD562657BEA60080FDE2 /* CropTheMessage.swift in Sources */,
