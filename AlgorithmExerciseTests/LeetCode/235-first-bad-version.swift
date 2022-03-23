@@ -37,9 +37,9 @@ private class Solution {
 
 import XCTest
 
-private class Test: XCTestCase {
+class FirstBadVersionTest: XCTestCase {
     
-    var sut: Solution = Solution()
+    private var sut: Solution = Solution()
     
     func test_1() {
         XCTAssertEqual(sut.firstBadVersion(15), isFirstBadVersion)

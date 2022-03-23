@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: cd Leetcode && xcodebuild test -project LeetCode.xcodeproj -scheme LeetCodeTests -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
+    - run: xcodebuild test -project AlgorithmExercise.xcodeproj -scheme AlgorithmExercise -destination 'platform=iOS Simulator,name=iPhone 12 Pro'

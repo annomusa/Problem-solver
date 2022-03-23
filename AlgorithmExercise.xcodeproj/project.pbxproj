@@ -43,6 +43,7 @@
 		B1FB1694265E59C200824A22 /* PlusOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB1693265E59C200824A22 /* PlusOperator.swift */; };
 		B1FB1698265E5E7900824A22 /* UrlRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB1697265E5E7900824A22 /* UrlRequestProvider.swift */; };
 		B1FB169E265E6B4300824A22 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB169D265E6B4200824A22 /* CarList.swift */; };
+		FE19AF2D27EB631100978A0D /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19AF2C27EB631100978A0D /* TreeNode.swift */; };
 		FE30F98227B566E80090A2B5 /* 235-first-bad-version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30F98127B566E80090A2B5 /* 235-first-bad-version.swift */; };
 		FE4C1E732799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift */; };
 /* End PBXBuildFile section */
@@ -97,7 +98,8 @@
 		B1FB1693265E59C200824A22 /* PlusOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOperator.swift; sourceTree = "<group>"; };
 		B1FB1697265E5E7900824A22 /* UrlRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestProvider.swift; sourceTree = "<group>"; };
 		B1FB169D265E6B4200824A22 /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
-		FE19AF2B27EB5FB900978A0D /* LeetCodeTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = LeetCodeTests.xctestplan; path = AlgorithmExercise/LeetCodeTests.xctestplan; sourceTree = "<group>"; };
+		FE19AF2B27EB5FB900978A0D /* AlgorithmExerciseTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlgorithmExerciseTests.xctestplan; path = AlgorithmExercise/AlgorithmExerciseTests.xctestplan; sourceTree = "<group>"; };
+		FE19AF2C27EB631100978A0D /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		FE30F98127B566E80090A2B5 /* 235-first-bad-version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-first-bad-version.swift"; sourceTree = "<group>"; };
 		FE4C1E722799ABB7002CFAC6 /* 235-lowest-common-ancestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "235-lowest-common-ancestor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +180,7 @@
 		B1F7246F263EAC5200A50B69 = {
 			isa = PBXGroup;
 			children = (
-				FE19AF2B27EB5FB900978A0D /* LeetCodeTests.xctestplan */,
+				FE19AF2B27EB5FB900978A0D /* AlgorithmExerciseTests.xctestplan */,
 				B1F7247B263EAC5200A50B69 /* AlgorithmExercise */,
 				B1F72486263EAC5200A50B69 /* AlgorithmExerciseTests */,
 				B1F7247A263EAC5200A50B69 /* Products */,
@@ -198,10 +200,11 @@
 			isa = PBXGroup;
 			children = (
 				B1F7247D263EAC5200A50B69 /* Info.plist */,
-				B1F72499263FAE6D00A50B69 /* GlobalFunc.swift */,
-				B15E23AF265A2AD40094BC0E /* String.swift */,
 				B15E23B3265A2B070094BC0E /* Collection.swift */,
+				B1F72499263FAE6D00A50B69 /* GlobalFunc.swift */,
 				B15E238F26595E430094BC0E /* ListNode.swift */,
+				B15E23AF265A2AD40094BC0E /* String.swift */,
+				FE19AF2C27EB631100978A0D /* TreeNode.swift */,
 			);
 			path = AlgorithmExercise;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				B15E23B0265A2AD40094BC0E /* String.swift in Sources */,
 				B1F7249A263FAE6D00A50B69 /* GlobalFunc.swift in Sources */,
 				B15E23B4265A2B070094BC0E /* Collection.swift in Sources */,
+				FE19AF2D27EB631100978A0D /* TreeNode.swift in Sources */,
 				B15E239026595E430094BC0E /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,10 +525,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -551,9 +555,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -576,6 +580,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -600,6 +606,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
