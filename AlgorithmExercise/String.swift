@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     subscript(_ offset: Int) -> Element {
         self[index(startIndex, offsetBy: offset)]
     }
