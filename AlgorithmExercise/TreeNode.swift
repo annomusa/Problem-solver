@@ -34,20 +34,29 @@ public extension TreeNode {
     }
     
     convenience init?(pos: Int, arr: [Int?]) {
-//        log("pos   \(pos)")
         
         self.init(arr[safe: pos] ?? nil)
         
         let leftIndex = pos * 2 + 1
-        if leftIndex < arr.count - 1 {
+        if leftIndex < arr.count {
             self.left = TreeNode(pos: leftIndex, arr: arr)
-//            log("left  \(self.left!.val)")
         }
         
         let rightIndex = leftIndex + 1
-        if rightIndex < arr.count - 1 {
+        if rightIndex < arr.count {
             self.right = TreeNode(pos: rightIndex, arr: arr)
-//            log("right \(self.right!.val)")
         }
+        
+        let curr = desc
+        let left = self.left?.desc ?? ""
+        let right = self.right?.desc ?? ""
+        log(curr)
+    }
+}
+
+
+public extension TreeNode {
+    var desc: String {
+        "\(val)"
     }
 }

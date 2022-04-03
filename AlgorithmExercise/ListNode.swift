@@ -34,3 +34,31 @@ public class ListNode {
         }
     }
 }
+
+public extension ListNode {
+    
+    convenience init?(arr: [Int]) {
+        guard let first = arr.first else { return nil }
+        self.init(first)
+        
+        var arr = arr.dropFirst()
+        var curr: ListNode? = self
+        for i in arr {
+            curr?.next = ListNode(i)
+            curr = curr?.next
+        }
+    }
+    
+    func toArray() -> [Int] {
+        var arr: [Int] = []
+        
+        var currentNode: ListNode? = self
+        while let loopNode = currentNode {
+            arr.append(loopNode.val)
+            currentNode = loopNode.next
+        }
+        
+        return arr
+    }
+    
+}

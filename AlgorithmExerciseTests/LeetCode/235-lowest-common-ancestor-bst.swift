@@ -16,9 +16,9 @@ private class Solution {
               let qVal = q?.val
         else { return root }
         
-        if pVal > parentVal, qVal > parentVal {
+        if parentVal < pVal, parentVal < qVal {
             return lowestCommonAncestor(root?.right, p, q)
-        } else if pVal < parentVal, qVal < parentVal {
+        } else if parentVal > pVal, parentVal > qVal {
             return lowestCommonAncestor(root?.left, p, q)
         }
         
