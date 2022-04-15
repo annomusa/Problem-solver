@@ -36,7 +36,7 @@ private class Solution {
     }
 }
 
-class _05_construct_bt_preorder_inorder: XCTestCase {
+class _105_construct_bt_preorder_inorder: XCTestCase {
     func test0() {
         let sut = Solution()
         

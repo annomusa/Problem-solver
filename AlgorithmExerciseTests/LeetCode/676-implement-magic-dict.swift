@@ -107,7 +107,7 @@ private class TrieNode {
  * let ret_2: Bool = obj.search(searchWord)
  */
 
-class _76_implement_magic_dict: XCTestCase {
+class _676_implement_magic_dict: XCTestCase {
     
     func test0() {
         let magicDictionary = MagicDictionary()
@@ -123,7 +123,7 @@ class _76_implement_magic_dict: XCTestCase {
     func test1() {
         let magicDictionary = MagicDictionary()
         magicDictionary.buildDict(["hello","hallo","leetcode"])
-        XCTAssertTrue(magicDictionary.search("hello")) // return False
+        XCTAssertFalse(magicDictionary.search("hello")) // return False
         XCTAssertTrue(magicDictionary.search("hhllo")) // We can change the second 'h' to 'e' to match "hello" so we return True
         XCTAssertFalse(magicDictionary.search("hell")) // return False
         XCTAssertFalse(magicDictionary.search("leetcoded")) // return False

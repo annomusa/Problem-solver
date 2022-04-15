@@ -51,7 +51,7 @@ private class Trie {
  * let ret_3: Bool = obj.startsWith(prefix)
  */
 
-class _08_implement_trie: XCTestCase {
+class _208_implement_trie: XCTestCase {
     
     func test1() {
         let trie = Trie2()

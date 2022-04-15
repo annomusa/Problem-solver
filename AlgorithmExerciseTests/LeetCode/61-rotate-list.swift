@@ -63,7 +63,7 @@ private class Solution {
     }
 }
 
-class _1_rotate_list: XCTestCase {
+class _61_rotate_list: XCTestCase {
     
     func test0() {
         let sut = Solution()

@@ -37,7 +37,7 @@ private class Solution {
     }
 }
 
-class _30_kth_smallest_bst: XCTestCase {
+class _230_kth_smallest_bst: XCTestCase {
     
     func test0() {
         let a = TreeNode(pos: 0, arr: [3,1,4,nil,2])

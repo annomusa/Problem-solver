@@ -41,7 +41,7 @@ public extension ListNode {
         guard let first = arr.first else { return nil }
         self.init(first)
         
-        var arr = arr.dropFirst()
+        let arr = arr.dropFirst()
         var curr: ListNode? = self
         for i in arr {
             curr?.next = ListNode(i)

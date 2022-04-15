@@ -73,7 +73,7 @@ private class Solution {
     }
 }
 
-class _650_lca_bt_3: XCTestCase {
+class _1650_lca_bt_3: XCTestCase {
     
     func test0() {
         let sut = Solution()

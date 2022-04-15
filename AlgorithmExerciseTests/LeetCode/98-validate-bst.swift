@@ -29,7 +29,7 @@ private class Solution {
     }
 }
 
-class _8_validate_bst: XCTestCase {
+class _98_validate_bst: XCTestCase {
     func test0() {
         let a = TreeNode(pos: 0, arr: [2,1,3])
         let sut = Solution()

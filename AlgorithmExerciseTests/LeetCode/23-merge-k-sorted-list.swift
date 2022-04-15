@@ -16,7 +16,7 @@ private class Solution {
     }
 }
 
-class _33_merge_k_sorted_list: XCTestCase {
+class _23_merge_k_sorted_list: XCTestCase {
     
     func test1() {
         let sut = Solution()

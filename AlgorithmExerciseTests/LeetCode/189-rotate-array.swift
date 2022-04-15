@@ -19,16 +19,14 @@ private class Solution {
         var start = start
         var end = end
         while start < end {
-            let temp = nums[start]
-            nums[start] = nums[end]
-            nums[end] = temp
+            nums.swapAt(start, end)
             start += 1
             end -= 1
         }
     }
 }
 
-class _89_rotate_array: XCTestCase {
+class _189_rotate_array: XCTestCase {
     func test0() {
         let sut = Solution()
         var arr = [1,2,3,4,5,6,7]

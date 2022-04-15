@@ -52,7 +52,7 @@ private class Solution {
     }
 }
 
-class _25_split_linkedlist: XCTestCase {
+class _725_split_linkedlist: XCTestCase {
     func xtest0() {
         let sut = Solution()
         let head = ListNode(arr: [1,2,3])

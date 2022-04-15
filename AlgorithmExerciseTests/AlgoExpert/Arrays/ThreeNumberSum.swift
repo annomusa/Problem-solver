@@ -28,35 +28,14 @@ private class Program {
         while let val = array.first {
             _ = array.removeFirst()
             
-            let newTargetSum = targetSum - val
-            
-            let res = twoSum(array: array, targetSum: newTargetSum)
+            let res = twoSum(array: array, targetSum: targetSum - val)
             
             for re in res {
                 var new = [val]
                 new.append(contentsOf: re)
-                new.sort()
                 result.append(new)
             }
         }
-        
-//        for val in array {
-//
-//            let newTargetSum = targetSum - val
-//
-//            let excludedArr = array.filter { i in
-//                i != val
-//            }
-//
-//            let res = twoSum(array: excludedArr, targetSum: newTargetSum)
-//
-//            for re in res {
-//                var new = [val]
-//                new.append(contentsOf: re)
-//                new.sort()
-//                result.append(new)
-//            }
-//        }
         
         let unique = Array(Set(result))
         
@@ -66,7 +45,7 @@ private class Program {
             return first[2] < second[2]
         }
         
-        return sorted
+        return result
     }
     
     private func twoSum(array: [Int], targetSum: Int) -> [[Int]] {
@@ -74,7 +53,11 @@ private class Program {
         var existMap: [Int: Bool] = [:]
         for i in array {
             if existMap[targetSum - i, default: false] {
-                res.append([i, targetSum - i])
+                if i > targetSum - i {
+                    res.append([targetSum - i, i])
+                } else {
+                    res.append([i, targetSum - i])
+                }
             }
             existMap[i] = true
         }
@@ -83,10 +66,9 @@ private class Program {
 }
 
 class ThreeNumberSumTests: XCTestCase {
+    private let sut = Program3()
     
     func test1() {
-        
-        let sut = Program()
         var arr = [12,3,1,2,-6,5,-8,6]
         let res = sut.threeNumberSum(
             array: &arr,
@@ -97,8 +79,6 @@ class ThreeNumberSumTests: XCTestCase {
     }
     
     func test2() {
-        
-        let sut = Program()
         var arr = [12, 3, 1, 2, -6, 5, -8, 6]
         let res = sut.threeNumberSum(
             array: &arr,
@@ -109,35 +89,26 @@ class ThreeNumberSumTests: XCTestCase {
     }
 }
 
-private class Program2 {
+private class Program3 {
     func threeNumberSum(array: inout [Int], targetSum: Int) -> [[Int]] {
+        array.sort()
         var result: [[Int]] = []
         
-        array.sort()
-        
-        for i in 0..<array.count - 2 {
-            var left = i + 1
-            var right = array.count - 1
+        for i in 0..<array.count-2 {
+            var p1 = i+1
+            var p2 = array.count-1
             
-            while left < right {
-                
-                let currentSum = array[i] + array[left] + array[right]
-                
-                if currentSum == targetSum {
-                    result.append([array[i], array[left], array[right]])
-                    left += 1
-                    right -= 1
-                } else if currentSum < targetSum {
-                    
-                    left += 1
-                } else if currentSum > targetSum {
-                    
-                    right -= 1
-                } else {
-                    
-                    
+            while p1 < p2 {
+                let res = array[i] + array[p1] + array[p2]
+                if targetSum == res {
+                    result.append([array[i], array[p1], array[p2]])
+                    p1 += 1
+                    p2 -= 1
+                } else if targetSum > res {
+                    p1 += 1
+                } else { // targetSum < res
+                    p2 -= 1
                 }
-                
             }
         }
         

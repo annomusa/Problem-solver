@@ -39,7 +39,7 @@ private class Solution {
     }
 }
 
-class _02_bt_level_order_traversal: XCTestCase {
+class _102_bt_level_order_traversal: XCTestCase {
     
     func test0() {
         let a = TreeNode(pos: 0, arr: [3,9,20,nil,nil,15,7])

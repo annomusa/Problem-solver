@@ -58,7 +58,7 @@ private class Solution {
     }
 }
 
-class _257_smallest_common_regions_t: XCTestCase {
+class _1257_smallest_common_regions_t: XCTestCase {
     
     func test0() {
         let sut = Solution()
