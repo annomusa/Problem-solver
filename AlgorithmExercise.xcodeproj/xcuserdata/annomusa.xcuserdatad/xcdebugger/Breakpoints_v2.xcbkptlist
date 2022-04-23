@@ -7,142 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6559AE81-6C03-4141-975C-F19A93254B10"
-            shouldBeEnabled = "Yes"
+            uuid = "47E18ED6-487C-43BD-ADEE-45F74F1990A2"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
+            filePath = "AlgorithmExerciseTests/LeetCode/21-merge-two-sorted-list.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "test1()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6559AE81-6C03-4141-975C-F19A93254B10 - 27d6c80d116caa7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.LetterCasePermutationTests.test1() -&gt; ()"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "6559AE81-6C03-4141-975C-F19A93254B10 - 27d6c80d116caa5c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.LetterCasePermutationTests.test1() -&gt; ()"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "6559AE81-6C03-4141-975C-F19A93254B10 - 27d6c80d116caa7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.LetterCasePermutationTests.test1() -&gt; ()"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "142">
-               </Location>
-               <Location
-                  uuid = "6559AE81-6C03-4141-975C-F19A93254B10 - 27d6c80d116cabb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.LetterCasePermutationTests.test1() -&gt; ()"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "142">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5D48D237-C864-4EB6-9F3E-1DCC03ABD010"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "letterCasePermutation(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5D48D237-C864-4EB6-9F3E-1DCC03ABD010 - e281ead458fea3c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.Solution.letterCasePermutation(Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "447">
-               </Location>
-               <Location
-                  uuid = "5D48D237-C864-4EB6-9F3E-1DCC03ABD010 - e281ead458fea3c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlgorithmExerciseTests.Solution.letterCasePermutation(Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "AlgorithmExerciseTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annomusa/Pandora/Projects/Problem-solver/AlgorithmExerciseTests/LeetCode/784-letter-case-permutation.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "409">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B266FFF-BD20-4733-A2E2-900BBA132691"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgorithmExerciseTests/Amazon/Leetcode/IdealDay.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "ideal(days:k:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "mergeTwoLists(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

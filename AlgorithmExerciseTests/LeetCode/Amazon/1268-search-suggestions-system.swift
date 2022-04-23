@@ -21,9 +21,17 @@ private class Solution {
         
         var prefix = ""
         // searching complexity = m * m
+        var startingNode = trie.root
+        var alwaysReturnEmpty = false
         for c in searchWord {
             prefix.append(c)
-            res.append(trie.getWordsWithPrefix(prefix))
+            if let newStartingNode = startingNode.children[c], !alwaysReturnEmpty {
+                startingNode = newStartingNode
+                res.append(trie.getWordsWithPrefix(prefix, newStartingNode))
+            } else {
+                alwaysReturnEmpty = true
+                res.append([])
+            }
         }
         
         return res
@@ -96,16 +104,16 @@ private class Trie {
         curr?.isWord = true
     }
     
-    func getWordsWithPrefix(_ prefix: String) -> [String] {
+    func getWordsWithPrefix(_ prefix: String, _ startingNode: Node) -> [String] {
         var result: [String] = []
-        var curr: Node? = root
-        for c in prefix {
-            if curr?.children[c] == nil {
-                return result
-            }
-            curr = curr?.children[c]
-        }
-        dfsWithPrefix(curr: curr, word: prefix, result: &result)
+//        var curr: Node? = root
+//        for c in prefix {
+//            if curr?.children[c] == nil {
+//                return result
+//            }
+//            curr = curr?.children[c]
+//        }
+        dfsWithPrefix(curr: startingNode, word: prefix, result: &result)
         return result
     }
     
