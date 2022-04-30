@@ -60,6 +60,11 @@ class LRUCache {
 
 extension LRUCache {
     private func addNode(_ node: DoubleListNode) {
+        /*
+         1 2 -> x <- 4 5
+                ^
+         */
+        
         node.prev = head
         node.next = head?.next
         

@@ -11,37 +11,41 @@ import XCTest
 
 private class Solution {
     func hasCycle(_ head: ListNode?) -> Bool {
-        guard head != nil else { return false }
-        
         var slow = head
         var fast = head?.next
         
         while slow != nil, fast != nil {
-            
-            if slow === fast {
-                return true
-            }
+            guard slow !== fast else { return true }
             
             slow = slow?.next
             fast = fast?.next?.next
-            
         }
         
-        return true
+        return false
     }
 }
 
 class LinkedListCycleTests: XCTestCase {
     
-    func xtest1() {
+    func test1() {
         
         let sut = Solution()
         
-        XCTAssertTrue(sut.hasCycle(ListNode(arr: [3,2,0,-4,2])))
+        let entry = ListNode(2)
+        let postEntry1 = ListNode(0)
+        let postEntry2 = ListNode(4)
+        entry.next = postEntry1
+        postEntry1.next = postEntry2
+        postEntry2.next = entry
+        let list1 = ListNode(3, entry)
+        XCTAssertTrue(sut.hasCycle(list1))
         
-        XCTAssertTrue(sut.hasCycle(ListNode(arr: [1,2,1])))
+        let list2 = ListNode(1)
+        let entry2 = ListNode(2, list2)
+        list2.next = entry2
+        XCTAssertTrue(sut.hasCycle(list2))
         
-        XCTAssertFalse(sut.hasCycle(ListNode(arr: [1])))
+        XCTAssertFalse(sut.hasCycle(ListNode(1)))
     }
     
 }

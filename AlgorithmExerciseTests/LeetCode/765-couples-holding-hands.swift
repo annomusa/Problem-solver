@@ -37,7 +37,7 @@ private class Solution {
 
 class CouplesHoldingHandsTests: XCTestCase {
     
-    func test1() {
+    func xtest1() {
         
         let sut = Solution()
         

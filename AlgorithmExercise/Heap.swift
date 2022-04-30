@@ -9,7 +9,7 @@ import Foundation
 
 class Heap<T: Comparable> {
     
-    private var heap: [T] = []
+    private(set) var heap: [T] = []
     private let comparator: (T, T) -> Bool
     
     init(_ array: [T], comparator: @escaping (T, T) -> Bool) {

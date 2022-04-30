@@ -91,7 +91,7 @@ private extension StringProtocol {
     }
 }
 
-extension Int {
+private extension Int {
     init?(string: String) {
         if string.count > 1, string[0] == "0" {
             return nil
